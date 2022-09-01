@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<varlist name="ProjectData">
+	<int name="FileVersion">1</int>
+	<varlist name="MapInfo">
+		<varlist name="Terrain">
+			<int name="nx">1024</int>
+			<int name="ny">1024</int>
+			<float name="MinAlt">-257.272</float>
+			<float name="MaxAlt">1136.96</float>
+			<float name="HorizScale">10</float>
+		</varlist>
+		<varlist name="Texture">
+			<int name="nx">1024</int>
+			<int name="ny">1024</int>
+		</varlist>
+		<bool name="WrapFlag">false</bool>
+	</varlist>
+	<varlist name="Maps">
+		<varlist name="DM">
+			<string name="Filename">hugeworld_DM.dmf</string>
+			<string name="MapType">DM</string>
+		</varlist>
+		<varlist name="HF">
+			<string name="Filename">hugeworld_HF.hfz</string>
+			<string name="MapType">HF</string>
+			<varlist name="MipMaps">
+				<int name="Step">8</int>
+				<int name="Max">8</int>
+			</varlist>
+		</varlist>
+		<varlist name="WM">
+			<string name="Filename">hugeworld_WM.wmf</string>
+			<string name="MapType">WM</string>
+		</varlist>
+		<varlist name="WS">
+			<string name="Filename">hugeworld_WS.hfz</string>
+			<string name="MapType">HF</string>
+		</varlist>
+		<varlist name="AM">
+			<string name="Filename">hugeworld_AM.amf.gz</string>
+			<string name="MapType">AM</string>
+		</varlist>
+		<varlist name="TN">
+			<string name="Filename">hugeworld_TN.png</string>
+			<string name="MapType">TN</string>
+		</varlist>
+		<varlist name="SH">
+			<string name="Filename">hugeworld_SH.png</string>
+			<string name="MapType">BYTE</string>
+		</varlist>
+		<varlist name="LM">
+			<string name="Filename">hugeworld_LM.jpg</string>
+			<string name="MapType">RGB</string>
+		</varlist>
+		<varlist name="SpecLM">
+			<string name="Filename">hugeworld_SpecLM.png</string>
+			<string name="MapType">RGB</string>
+		</varlist>
+		<varlist name="TX">
+			<string name="Filename">hugeworld_TX.jpg</string>
+			<string name="MapType">RGB</string>
+		</varlist>
+	</varlist>
+	<varlist name="Climates">
+		<varlist name="Temperate">
+			<string name="Filename">C:\Users\Kotov_ON\L3DT\Resources\Std 16.05.3.1\Climates\temperate26\Temperate26.cli.xml</string>
+		</varlist>
+	</varlist>
+</varlist>

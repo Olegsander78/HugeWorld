@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<varlist name="Settings">
+	<varlist name="MapViewOptions">
+		<varlist name="HF">
+			<string name="IndexedPalette">Monochrome</string>
+		</varlist>
+		<varlist name="WS">
+			<string name="IndexedPalette">Thermal</string>
+		</varlist>
+		<varlist name="SH">
+			<string name="IndexedPalette">InverseBoolean</string>
+		</varlist>
+	</varlist>
+	<varlist name="HF">
+		<int name="nx">1024</int>
+		<int name="ny">1024</int>
+		<float name="HorizScale">10</float>
+		<bool name="MosaicFlag">false</bool>
+		<int name="MosaicSize">512</int>
+		<string name="Algorithm">InflateDM64</string>
+	</varlist>
+	<bool name="WrapFlag">false</bool>
+	<varlist name="DM">
+		<string name="Algorithm">PeakDM</string>
+		<int name="HF_in_DM">64</int>
+		<int name="nx">16</int>
+		<int name="ny">16</int>
+		<int name="SeaLand">75</int>
+		<int name="FlatSteep">50</int>
+		<int name="FeatureScale">50</int>
+		<int name="FracRough">50</int>
+		<int name="PeakRough">50</int>
+		<int name="Cliffs">50</int>
+		<int name="Erosion">5</int>
+		<int name="Lakes">0</int>
+		<string name="Climate">Temperate</string>
+	</varlist>
+	<varlist name="WM">
+		<varlist name="FloodAll">
+			<bool name="ClearFlag">false</bool>
+			<bool name="WplaneFlag">true</bool>
+			<float name="WplaneLevel">0</float>
+			<int name="WplaneType">10</int>
+			<bool name="SeaFlag">true</bool>
+			<bool name="LakesFlag">true</bool>
+			<bool name="WtableFlag">true</bool>
+		</varlist>
+		<varlist name="Wtable">
+			<int name="nIter">2</int>
+			<bool name="ClearWtableBeforeCalc">false</bool>
+			<varlist name="Wtable">
+				<float name="MaxDepth">100</float>
+				<float name="RiseParam">0.8</float>
+				<float name="FallParam">0.96</float>
+				<float name="LossParam">5</float>
+				<float name="Tolerance">0.01</float>
+			</varlist>
+			<varlist name="Salin">
+				<bool name="EnableFlag">true</bool>
+				<float name="LossParam">5</float>
+				<float name="GradExpon">0.05</float>
+				<float name="LakeLoss">0</float>
+				<float name="Tolerance">0.0005</float>
+			</varlist>
+		</varlist>
+		<varlist name="WaterBodyList">
+			<WaterBody>
+				<int name="WaterID">1</int>
+				<int name="Type">10</int>
+				<float name="WaterLevel">0.000000</float>
+				<int64 name="nPixels">0</int64>
+				<int name="xCoord">0</int>
+				<int name="yCoord">0</int>
+			</WaterBody>
+			<WaterBody>
+				<int name="WaterID">2</int>
+				<int name="Type">10</int>
+				<float name="WaterLevel">0.000000</float>
+				<int64 name="nPixels">0</int64>
+				<int name="xCoord">80</int>
+				<int name="yCoord">0</int>
+			</WaterBody>
+			<WaterBody>
+				<int name="WaterID">3</int>
+				<int name="Type">10</int>
+				<float name="WaterLevel">0.000000</float>
+				<int64 name="nPixels">0</int64>
+				<int name="xCoord">135</int>
+				<int name="yCoord">0</int>
+			</WaterBody>
+			<WaterBody>
+				<int name="WaterID">4</int>
+				<int name="Type">10</int>
+				<float name="WaterLevel">0.000000</float>
+				<int64 name="nPixels">0</int64>
+				<int name="xCoord">578</int>
+				<int name="yCoord">0</int>
+			</WaterBody>
+			<WaterBody>
+				<int name="WaterID">5</int>
+				<int name="Type">10</int>
+				<float name="WaterLevel">0.000000</float>
+				<int64 name="nPixels">0</int64>
+				<int name="xCoord">8</int>
+				<int name="yCoord">872</int>
+			</WaterBody>
+			<WaterBody>
+				<int name="WaterID">6</int>
+				<int name="Type">10</int>
+				<float name="WaterLevel">0.000000</float>
+				<int64 name="nPixels">0</int64>
+				<int name="xCoord">1000</int>
+				<int name="yCoord">877</int>
+			</WaterBody>
+		</varlist>
+	</varlist>
+	<varlist name="LM">
+		<colour name="Sun">255, 244, 222</colour>
+		<colour name="Amb">98, 192, 255</colour>
+		<colour name="Spec">255, 255, 255</colour>
+		<float name="Azim">0</float>
+		<float name="Elev">60</float>
+		<float name="Brightness">1</float>
+		<float name="SunAmbRatio">0.8</float>
+		<bool name="UseWM">true</bool>
+		<bool name="ShadowFlag">true</bool>
+		<bool name="SpecularFlag">true</bool>
+		<bool name="RecalcShadowFlag">false</bool>
+		<bool name="BumpMapping">false</bool>
+		<bool name="MosaicFlag">false</bool>
+		<int name="LM_in_HF">1</int>
+		<vector3f name="AbsRGB">10.000000, 20.000000, 50.000000</vector3f>
+		<bool name="DoFresnel">true</bool>
+		<float name="DefaultTx">1</float>
+	</varlist>
+	<varlist name="TX">
+		<bool name="UseLM">true</bool>
+		<bool name="UseTX">true</bool>
+		<bool name="UseStrata">true</bool>
+		<int name="TX_in_HF">1</int>
+		<bool name="MosaicFlag">false</bool>
+		<int name="MosaicSize">512</int>
+		<int name="MaxRadAA">2</int>
+	</varlist>
+	<varlist name="Ops">
+		<bool name="GenDM">true</bool>
+		<bool name="GenHF">true</bool>
+		<bool name="FloodSea">true</bool>
+		<bool name="FloodLakes">true</bool>
+		<bool name="WaterTable">true</bool>
+		<bool name="FloodAll">true</bool>
+		<bool name="GenAM">true</bool>
+		<bool name="GenTN">true</bool>
+		<bool name="GenLM">true</bool>
+		<bool name="GenTX">true</bool>
+	</varlist>
+	<varlist name="CalcTimers">
+		<varlist name="DM">
+			<float name="GenMap">0.203</float>
+		</varlist>
+		<varlist name="HF">
+			<float name="DesignInflate64">21.965</float>
+		</varlist>
+		<varlist name="WM">
+			<float name="FloodSeas">0</float>
+			<float name="FloodLakes">0.094</float>
+			<float name="FloodWtable">6.365</float>
+		</varlist>
+		<varlist name="AM">
+			<float name="GenMap">5.257</float>
+		</varlist>
+		<varlist name="TN">
+			<float name="GenMap">0.967</float>
+		</varlist>
+		<varlist name="LM">
+			<float name="CastShadows">0.671</float>
+			<float name="CalcLighting">0.998</float>
+		</varlist>
+		<varlist name="TX">
+			<float name="GenMap">2.075</float>
+		</varlist>
+	</varlist>
+	<int name="SettingsVersion">2540</int>
+</varlist>
